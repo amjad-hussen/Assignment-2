@@ -129,13 +129,22 @@ button{
     display: flex;
     align-items: center;
     gap: 60px;
+    margin-top: 120px;
+    max-width: 1140px;
+    position: relative;
 }
-.trusted-badge{
+.badge{
     width: 286px;
     height: 286px;
-    border: 1px solid black;
-    align-items: end;
+    position: absolute;
+    left: 350px;
+    top:-120px;
     
+}
+
+/* Latest Deal section DEsign */
+.deal-container{
+    text-align: center;
 }
 
 
@@ -144,8 +153,14 @@ button{
 
 /* Mobile Device Design */
 header > section{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    
 }
+main > section{
+    margin-top: 50px;
+
+}
+
 @media screen and (max-width:576px) {
     ul li .home , .shop{
         display: none;
@@ -195,6 +210,9 @@ header > section{
     }
 
     /* Badge Design */
+    .badge{
+        display: none;
+    }
 
     .sell-container{
         flex-direction: column;
