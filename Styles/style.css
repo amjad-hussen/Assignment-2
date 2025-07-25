@@ -116,7 +116,7 @@ li a{
     font-family: "Inter", sans-serif;
     margin:10px;
 }
-button{
+.card-btn{
     font-weight: 600;
     color: #FFFFFF;
     background-color: #E95A08;
@@ -147,12 +147,81 @@ button{
     text-align: center;
 }
 
+/* Box Design */
+.box{
+    display: grid;
+    grid-template-columns: repeat(1,367px) auto;
+    gap: 28px;
+    grid-template-rows: repeat(2,200px) auto;
+    font-family:"Noto Serif", serif;
+    color: #FFFFFF;
+}
+.box-1{
+    
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-size: 1.25rem;
+     font-weight: bold;
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/deal-bloom.png");
+    
+
+}
+.box-2{
+   
+    grid-row: span 2;
+    border-radius: 22px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-size: 2.5rem;
+     font-weight: bold;
+     background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/deal-zabo.png");
+     position: relative;
+     
+
+}
+.box-3{
+    
+    border-radius: 10px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-size: 1.25rem;
+     font-weight: bold;
+     background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/deal-ana.png");
+     
+
+}
+#shop{
+    font-size: 1.75rem;
+}
+
+.box a{
+    color: white;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+.box h4{
+    margin: 8px;
+}
+
 
 
 
 
 /* Mobile Device Design */
-header > section{
+
+
+@media screen and (max-width:576px) {
+
+    /* Shared Design */
+
+    header > section{
     margin-bottom: 50px;
     
 }
@@ -161,8 +230,7 @@ main > section{
 
 }
 
-@media screen and (max-width:576px) {
-    ul li .home , .shop{
+ul li .home , .shop{
         display: none;
     }
     nav{
@@ -192,7 +260,7 @@ main > section{
         column-gap: 20px;
         
     }
-    button{
+    .card-btn{
         padding: 10px 48px;
     }
     .card-img{
@@ -222,6 +290,25 @@ main > section{
        max-width: 100%;
        
     }
+
+    /* Box Design */
+    .box{
+        grid-template-columns: repeat(1,1fr);
+        
+        max-width: 100%;
+        
+    }
+    .box-2{
+        font-size: 1.25rem;
+
+    }
+    #shop{
+    font-size: 1.25rem;
+}
+.box-2{
+    grid-row: span 1;
+}
+        
     
 
     
