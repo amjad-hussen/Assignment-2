@@ -125,6 +125,18 @@ button{
 }
 
 /* Trusted Seller Secrion */
+.sell-container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.trusted-badge{
+    width: 286px;
+    height: 286px;
+    border: 1px solid black;
+    align-items: end;
+    
+}
 
 
 
@@ -182,6 +194,16 @@ header > section{
 
     }
 
+    /* Badge Design */
+
+    .sell-container{
+        flex-direction: column;
+    
+    }
+    .sell-img img {
+       max-width: 100%;
+       
+    }
     
 
     
